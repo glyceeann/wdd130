@@ -1,0 +1,214 @@
+/* WWR Rafting Site CSS - Glycee Ann */
+/* Color palette for the rafting site */
+
+:root {
+    --primary-color: #0a4a70;
+    /* Deep blue representing river water */
+    --secondary-color: #219ebc;
+    /* Light blue representing water highlights */
+    --accent1-color: #023047;
+    /* Dark navy for text and footer background */
+    --accent2-color: #ffb703;
+    /* Yellow accent color for highlights and borders */
+    --heading-font: "Bebas Neue", "Arial Narrow", sans-serif;
+    /* Heading font family */
+    --body-font: "Roboto", Arial, Helvetica, sans-serif;
+    /* Body text font family */
+}
+
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body base styles */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+/* Page layout - centered container with 840px width */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* Header layout with logo and navigation */
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    padding: 8px 16px;
+    border-bottom: 4px solid var(--accent2-color);
+}
+
+/* Logo sizing and styling */
+header img {
+    width: 75px;
+    height: auto;
+}
+
+/* Heading styles */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* H2 underline accent */
+h2 {
+    border-bottom: 3px solid var(--accent2-color);
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+/* Default spacing for content elements */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Navigation layout */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+
+/* Social media links - container styling */
+.socialmedia a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    padding: 4px;
+    border: 2.5px solid var(--accent2-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.socialmedia a:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 0 3px white, 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Social media icons - 32px with white background for visibility */
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+    display: block;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 14px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Hero section - main image with overlay content */
+.hero {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin: 16px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Hero heading overlay */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.85;
+    background-color: var(--accent1-color);
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero article overlay box */
+.hero article {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(10, 74, 112, 0.85);
+    /* Semi-transparent blue background */
+    color: #fff;
+    padding: 16px;
+    border-radius: 6px;
+    border-left: 5px solid var(--accent2-color);
+}
+
+/* Image within hero article - floated right */
+.hero article img {
+    float: right;
+    width: 125px;
+    margin: 0 0 8px 16px;
+    border: 2px solid var(--accent2-color);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+/* Content sections - white cards with shadow */
+section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer layout with dark background */
+footer {
+    background-color: var(--accent1-color);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 16px;
+    margin-top: 20px;
+    border-top: 4px solid var(--accent2-color);
+}
+
+footer p {
+    color: white;
+    margin: 0;
+}
