@@ -27,7 +27,6 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 4px solid var(--secondary-color);
-    /* USE 1 for secondary */
 }
 
 header img {
@@ -45,7 +44,6 @@ nav a {
 nav a:hover {
     color: var(--accent2-color);
     background-color: var(--secondary-color);
-    /* USE 2 for secondary */
     padding: 0.3rem 0.6rem;
     border-radius: 4px;
 }
