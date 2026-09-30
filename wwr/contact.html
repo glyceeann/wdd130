@@ -5,9 +5,9 @@
     <!-- head info -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - White Water Rafting Company</title>
+    <title>Contact Us - Rapids White Water Rafting</title>
     <meta name="description"
-      content="Contact White Water Rafting Company for general inquiries, reservation questions, and website suggestions.">
+      content="Contact Rapids White Water Rafting for general inquiries, reservation questions, and website suggestions.">
     <meta name="author" content="Glycee Ann Bullecer Picar">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -30,7 +30,7 @@
 
         <!-- part 1 - company address -->
         <div class="company-info">
-            <h1>White Water Rafting Company</h1>
+            <h1>Rapids White Water Rafting</h1>
             <p>123 Main River Street<br>Kolob, California<br>+1 999 999 9999<br>info@whitewater.com
             </p>
         </div>
@@ -46,7 +46,7 @@
                   title="White Water Rafting Location - Kolob, California"></iframe>
             </div>
 
-            <!-- contact form -->
+            <!-- contact form - must be inside main -->
             <form class="contact-form">
                 <div class="field">
                     <label for="name">Name</label>
@@ -59,12 +59,13 @@
                 <div class="field">
                     <label>Message Purpose</label>
                     <fieldset>
-                        <label><input type="radio" name="purpose" value="general" required> General
-                            Inquiry</label>
-                        <label><input type="radio" name="purpose" value="reservation"> Reservation
-                            Question</label>
-                        <label><input type="radio" name="purpose" value="suggestion"> Website
-                            Suggestion</label>
+                        <label for="purpose-general"><input type="radio" id="purpose-general"
+                              name="purpose" value="general" required> General Inquiry</label>
+                        <label for="purpose-reservation"><input type="radio"
+                              id="purpose-reservation" name="purpose" value="reservation">
+                            Reservation Question</label>
+                        <label for="purpose-suggestion"><input type="radio" id="purpose-suggestion"
+                              name="purpose" value="suggestion"> Website Suggestion</label>
                     </fieldset>
                 </div>
                 <div class="field">
@@ -72,8 +73,8 @@
                     <textarea id="message" name="message" placeholder="Type here"></textarea>
                 </div>
                 <div class="check">
-                    <label><input type="checkbox" name="subscribe"> Please Subscribe me to the
-                        monthly newsletter</label>
+                    <label for="subscribe"><input type="checkbox" id="subscribe" name="subscribe">
+                        Please Subscribe me to the monthly newsletter</label>
                 </div>
                 <button type="submit">Get in Touch!</button>
             </form>
