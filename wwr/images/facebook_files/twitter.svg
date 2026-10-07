@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <circle cx="256" cy="256" r="248" fill="black"/>
+  <path d="M180 150l152 212M332 150L180 362" stroke="white" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="180" cy="95" rx="110" ry="26" fill="white" opacity="0.22"/>
+</svg>
