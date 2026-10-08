@@ -268,27 +268,26 @@ section {
     font: inherit;
 }
 
-/* RADIO GROUP - 1 per line - only for contact.html */
-.radio-group {
+.field fieldset {
+    border: 1px solid #888;
+    padding: 0.5rem 0.8rem;
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
-    grid-column: 2; /* puts the group in the 2nd column of .field grid */
+    gap: 0.4rem;
+    width: 100%;
+    border-radius: 4px;
 }
 
-.radio-group label {
+.field fieldset legend {
+    font-weight: bold;
+    padding: 0 0.3rem;
+}
+
+.field fieldset label {
     display: flex;
+    gap: 0.4rem;
     align-items: center;
-    gap: 0.5rem;
-    font-size: 0.85rem;
     font-weight: normal;
-    padding-top: 0; /* overrides .field label padding */
-    cursor: pointer;
-}
-
-.radio-group input[type="radio"] {
-    width: auto;
-    margin: 0;
 }
 
 .field textarea {
@@ -566,7 +565,6 @@ footer .socialmedia a:hover img {
 }
 
 .trip-cards-grid {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
 }
